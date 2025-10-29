@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     
+
+
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +15,7 @@
     overflow: hidden;
 }
 #logo-and-navbar{
-    background-color: white;
+    background-color: transparent;
     padding: 20px 0;
     
 }
@@ -30,11 +32,11 @@
     justify-content: space-between;
 }
 .logo img{
-    width: 12%;
+    width: 10%;
     height: auto;
     position: relative;
     left: 50px;
-    top: 10px;  
+    top: 4px;  
 }
 
 .links {
@@ -58,9 +60,10 @@
 }
 .logo-navbar .links ul li a {
    
-    color: /**rgba(67, 64, 148, 1);**/ darkgoldenrod;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    color: black;
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     font-size: 15px;
     line-height: 18.29px;
     text-decoration: none;
@@ -88,7 +91,7 @@
 .container1 h1{
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
-  font-size: 55px;
+  font-size: 65px;
   color: white;
   font-weight: 700;
   font-style: normal;
@@ -128,7 +131,7 @@
      
     }
   }
-  
+
 .container2 img {
     max-width: 100%;
     height: 600px;
@@ -154,16 +157,14 @@
   }
 
 .container3 p {
-font-family: "Crimson Text", serif;
+    font-family: "Lato", sans-serif;
 color: black;
 font-size: 20px;
   font-weight: 400;
   font-style: normal;
   max-width: 400px;
 }
-.colored1{
-    color: black;
-}
+
 .btn1 {
     width: 200px;
     padding: 8px 4px;
@@ -174,7 +175,9 @@ font-size: 20px;
     top: 50px;
 }
 .btn1 a {
-    font-family: "Crimson Text", serif;
+font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -190,6 +193,7 @@ font-size: 20px;
 .flexBox {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 30px;
 }
 .container4{
@@ -215,7 +219,7 @@ font-family: "Playfair Display", serif;
   margin: 10px 0;
 }
 .container4 p {
-    font-family: "Crimson Text", serif;
+    font-family: "Lato", sans-serif;
     color: white;
     font-size: 18px;
       font-weight: 400;
@@ -232,10 +236,9 @@ font-family: "Playfair Display", serif;
     height: 300px;
 }
 .container5 img {
-    max-width:100%;
+    max-width: 100%;
     height: 300px;
-    object-fit: cover;
-   
+    object-fit: contain;   
 }
 
   /* Styles that apply when the container is hovered over */
