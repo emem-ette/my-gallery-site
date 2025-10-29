@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@media (max-width:1200px) {
+    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#cc-container{
+    max-width:1440px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#logo-and-navbar{
+    background-color: white;
+    padding: 20px 0;
+    
+}
+.nav-1{
+    position: sticky;
+    top: 0; 
+    z-index: 1000; /* stay above content */
+
+}
+.logo-navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 12%;
+    height: auto;
+    position: relative;
+    left: 50px;
+    top: 10px;  
+}
+
+.links {
+    position: relative;
+    right: 80px;
+    top: 0px;
+}
+.logo-navbar .links ul {
+   display: flex;
+   justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.logo-navbar .links ul li {
+    
+    padding: 20px 10px;
+    margin: 0px 10px;
+
+}
+.logo-navbar .links ul li a {
+   
+    color: /**rgba(67, 64, 148, 1);**/ darkgoldenrod;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.29px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.logo-navbar .links ul li a:hover {
+    border-bottom: 3px solid /*8rgba(67, 64, 148, 1);**/ yellow;
+    margin-top: 5px;
+}
+#Hero{
+    padding: 100px 0;
+    background-color: transparent;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.container1{
+    width: 30%;
+    height: 600px;
+    background-color: black;
+}
+.container1 h1{
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 55px;
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  transform: translate(-50%, -50%); /* Centers the element */
+  z-index: 10;
+  opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInText 1s ease-out forwards;
+    animation-delay: 0.5s; /* Delay the text animation */;
+
+}
+@keyframes fadeInText {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.colored{
+    color: yellow;
+}
+.container2{
+    width: 40%;
+    height: 600px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s ease-out forwards;
+    animation-delay: 1s; /* Delay the second container animation */
+}
+@keyframes slideInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+     
+    }
+  }
+  
+.container2 img {
+    max-width: 100%;
+    height: 600px;
+    object-fit: cover;
+   
+}
+.container3{
+    width: 50%;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    left: 50px;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1s ease-out forwards;
+    animation-delay: 1.5s; /* Delay the third container animation */
+}
+@keyframes slideInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.container3 p {
+font-family: "Crimson Text", serif;
+color: black;
+font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 400px;
+}
+.colored1{
+    color: black;
+}
+.btn1 {
+    width: 200px;
+    padding: 8px 4px;
+    margin: 5px 0px;
+    border: 8px solid black;
+    background-color: black;
+    position: relative;
+    top: 50px;
+}
+.btn1 a {
+    font-family: "Crimson Text", serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+}
+.icon{ 
+    color: red;
+}
+#about{
+    padding: 100px 0;
+    background-color: white;
+}
+.flexBox {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.container4{
+    width: 35%;
+    height: 300px;
+    background-color: silver;
+    margin-right: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease; /
+}
+.container4:hover {
+    background-color: black;
+  
+  }
+.container4 h1 {
+font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  max-width: 300px;
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+.container4 p {
+    font-family: "Crimson Text", serif;
+    color: white;
+    font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      max-width: 400px;
+}
+.centerText{
+    width: 70%;
+  margin: 0 auto; /* Horizontally centers the div */
+  text-align: center; /* Horizontally centers text within the div */
+}
+.container5{
+    width: 35%;
+    height: 300px;
+}
+.container5 img {
+    max-width:100%;
+    height: 300px;
+    object-fit: cover;
+   
+}
+
+  /* Styles that apply when the container is hovered over */
+/*#galleryName{
+    padding: 300px 
+    background-image: url(./images/gemini\ arts\ gallery.webp);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: inline-block; 
+
+
+}
+.gName{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    color: white;/* text color */
+    /*font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 700;
+    border-right: 3px solid yellow; /* cursor *//*white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* start hidden */
+    /*animation: typing 4s steps(20, end) forwards,
+           blink 0.7s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 20ch } /* 20 characters (adjust if text changes) *
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color:yellow; }
+  }
+  
+
+#artgallery{
+    padding: 200px 0;
+    background-color: white;
+    
+
+}
+
+.txt{
+color: yellow;
+font-size: 50px;
+font-weight: 500;
+font-family: monospace;
+position: relative;
+bottom: 100px;    
+display: flex;
+justify-content: center; /* horizontal center 
+align-items: center;     /* vertical center 
+}
+.art-box{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    top: 50px;
+  
+   
+}
+.exhibition img{
+    width: 80%;
+    height: auto;
+    border: 5px solid none;
+    border-radius: 3px;
+}
+.artfairs img{
+    width: 80%;
+    height: auto; border: 5px solid none;
+    border-radius: 3px;
+
+}
+.exhibition h4{
+ text-decoration: none;
+ color: black;
+ font-family: monospace;
+ letter-spacing: 8px;
+ font-size: 25px;
+ font-weight: 300;
+ position: relative;
+ top: 20px;
+}
+.exhibition a{
+    text-decoration: none;
+}
+.artfairs h4{
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    letter-spacing: 8px;
+    font-size: 25px;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+   }
+   .artfairs a{
+       text-decoration: none;
+   }
+
+   #events{
+    padding: 200px 0;
+    background-color: white;
+   }
+   .quatro-text-box{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+   }
+   .quatro-img img{
+    width: 70%;
+    height: auto;
+   }
+   .text-box{
+    width: 59%;
+   }*/
+}
