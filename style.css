@@ -3,7 +3,7 @@
 
 
 
-@media only screen and (min-width: 769px) and (max-width: 1800px) {
+@media only screen and (min-width: 769px) and (max-width: 2000px) {
     
 
 
@@ -134,4 +134,5 @@ html {
 
 .dot:hover {
   background-color: black;
+}
 }
