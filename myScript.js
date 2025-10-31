@@ -1,5 +1,6 @@
-function unmuteAudio() {
-    const audio = document.getElementById('backgroundAudio');
-    audio.muted = false;
-    audio.play(); // Ensure playback if not already started
+function scrollToBoth() {
+  document.getElementById("logo-and-navbar").scrollIntoView({ behavior: "smooth" });
+  setTimeout(() => {
+    document.getElementById("Hero").scrollIntoView({ behavior: "smooth" });
+  });
 }
